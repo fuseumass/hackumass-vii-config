@@ -1,7 +1,12 @@
 name: HackUMass
-version: VII # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
+version: VII
 main_website: https://hackumass.com
 dashboard_url: dashboard.hackumass.com
-donotreply: donotreply@hackumass.com
-contact_email: team@hackumass.com
-
+logos:
+  primary_path: HUMVLogo.png
+  nav_path: navlogo.png
+emails:
+  donotreply: donotreply@hackumass.com
+  contact: team@hackumass.com
+slack:
+  subdomain: hackumass-vii
