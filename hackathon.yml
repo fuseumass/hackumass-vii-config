@@ -1,0 +1,7 @@
+name: HackUMass
+version: VII # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
+main_website: https://hackumass.com
+dashboard_url: dashboard.hackumass.com
+donotreply: donotreply@hackumass.com
+contact_email: team@hackumass.com
+
