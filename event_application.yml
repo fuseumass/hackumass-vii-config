@@ -5,5 +5,7 @@ custom_fields:
     - red
     - blue
     - green
+   required: True
  - name: live
    text: Where do you live?
+   required: False
