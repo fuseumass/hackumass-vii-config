@@ -3,8 +3,8 @@ version: VII
 main_website: https://hackumass.com
 dashboard_url: dashboard.hackumass.com
 logos:
-  primary_path: HUMVLogo.png
-  nav_path: navlogo.png
+  primary_path: HUMVII-Grey.png
+  nav_path: HUMVII-navlogo.png
 emails:
   donotreply: donotreply@hackumass.com
   contact: team@hackumass.com
