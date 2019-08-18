@@ -1,19 +1,23 @@
+Hi <%= @user.first_name %>,
 
-Hello <%= @user.first_name %>,
-  
-Congratulations! You’ve been accepted to participate in <%= HackumassWeb::Application::HACKATHON_NAME %>. 
+Congratulations! You submitted an application to attend <%= HackumassWeb::Application::HACKATHON_NAME %> <%= HackumassWeb::Application::HACKATHON_VERSION %>, and you have been accepted!
 
-The event is from October 12th to October 14th 2018 at the University of Massachusetts Amherst.  In order to participate, make sure you go to our website and RSVP!
+The event starts in the evening of Friday, October 18th and ends in the late afternoon of Sunday, October 20th at the University of Massachusetts Amherst in Amherst, MA. In order to participate, make sure you go to our website and RSVP! There, you will find more information about traveling, and how to get to the event. Your spot is not reserved until you RSVP, so please do so as soon as you know whether or not you will be able to attend!
 
-Even though we would like to help everyone get to <%= HackumassWeb::Application::HACKATHON_NAME %>, we simply don’t have enough funds. Because of this, travel reimbursements will not be offered.
+If you have any questions, please visit our website at <%= HackumassWeb::Application::MAIN_WEBSITE %>. If you can’t find your answer on our website, then please feel free to shoot us an email at  <%= HackumassWeb::Application::CONTACT_EMAIL %> 
 
-If you have any questions please visit our website at <%= HackumassWeb::Application::MAIN_WEBSITE %>. If you can’t find your answer on our website, then please feel free to shoot us an email at <%= HackumassWeb::Application::CONTACT_EMAIL %> and we’ll get back to you as soon as we can.
+You should also definitely check out the <%= HackumassWeb::Application::HACKATHON_NAME %> <%= HackumassWeb::Application::HACKATHON_VERSION %> Slack, because it's likely that your questions have already been asked! Log in to your account at <%= HackumassWeb::Application::DASHBOARD_URL %> to join.
 
 <% if @user.event_application.age.to_i < 18 %>
-In addition, if you're younger than 18 years old, please fill out the attached form and bring it to <%= HackumassWeb::Application::HACKATHON_NAME %> <%= HackumassWeb::Application::HACKATHON_VERSION %> on the day of the event.
+    Important: you noted on your application that you are younger than 18 years old. Please fill out the attached form and bring it to <%= HackumassWeb::Application::HACKATHON_NAME %> <%= HackumassWeb::Application::HACKATHON_VERSION %> on the day of the event.
+    Download Form Here: http://hackumass.com/legal/HUMVLiabilityWaiverForm.pdf
 <% end %>
 
+#############
+# RSVP Now! #
+#############
+
+To RSVP, visit: https://<%= HackumassWeb::Application::DASHBOARD_URL %>
+
 Thanks again for registering for our event, and we look forward to seeing you there!
-
 - The <%= HackumassWeb::Application::HACKATHON_NAME %> Team
-
