@@ -1,0 +1,9 @@
+custom_fields:
+ - name: color
+   text: What is your favorite color?
+   options:
+    - red
+    - blue
+    - green
+ - name: live
+   text: Where do you live?
