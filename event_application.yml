@@ -1,11 +1,58 @@
 custom_fields:
- - name: color
-   text: What is your favorite color?
+ - name: linkedin_url
+   text: 'LinkedIn URL:'
+ - name: github_url
+   text: 'GitHub URL:'
+ - name: been_to_hackathon
+   text: 'Have you been to a hackathon before?'
+   type: boolean
+   required: True
+   toggle_field: been_to_hackathon_name
+ - name: been_to_hackathon_name
+   text: 'What other hackathons have you attended? Give a short list:'
+   type: textarea
+   max_chars: 150
+   hidden: True
+ - name: been_to_hackumass
+   text: 'Have you previously attended HackUMass?'
+   type: boolean
+   required: True
+   toggle_field: previous_hackumass_comments
+ - name: previous_hackumass_comments
+   text: "Since you've attended HackUMass before, is there anything new or different you'd like to see at HackUMass VII?"
+   hidden: True
+ - name: programming_skills
+   text: 'Programming Skills (select all that apply):'
    options:
-    - red
-    - blue
-    - green
-   required: True
- - name: live
-   text: Where do you live?
-   required: True
+    - HTML/CSS
+    - Javascript/NodeJS
+    - PHP
+    - SQL
+    - Ruby
+    - Java
+    - Kotlin
+    - Swift
+    - Objective C
+    - C/C++/C#
+    - Python
+ - name: hardware_skills
+   text: 'Hardware Skills (select all that apply):'
+   options:
+    - Embedded Systems
+    - Robotics
+    - Wireless Communications
+    - Circuits
+    - 3D Printing
+ - name: other_skills
+   title: 'If there are any other tech-related skills not listed above that you would like to share, list them below:'
+   type: textarea
+   max_chars: 150
+ - name: how_did_you_hear
+   title: 'How did you hear about HackUMass?'
+   type: textarea
+ - name: what_hardware
+   title: 'What hardware do you want to see at HackUMass?'
+   type: 'textarea'
+ - name: fun_question
+   title: "Phew! That application was a bit long, but you're almost done! Just for fun... what's your spirit animal? Creativity counts! :)"
+
