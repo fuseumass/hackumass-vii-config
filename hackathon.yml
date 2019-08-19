@@ -12,4 +12,6 @@ slack:
   subdomain: hackumass-vii
 applications:
   mode: 'open'
-  # options: open, waitlist, or closed. defaults to closed
+  # options: open, waitlist, or closed. defaults to closed.
+  # The applications are still not opened unless the applications feature
+  # flag is enabled.

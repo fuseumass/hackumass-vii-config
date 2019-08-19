@@ -17,11 +17,16 @@ custom_fields:
    label: 'Have you been to a hackathon before?'
    type: boolean
    required: True
-   toggle_field: been_to_hackathon_name
- - name: been_to_hackathon_name
-   label: "What other hackathons have you attended? Give a short list"
-   type: textarea
-   max_chars: 500
+   toggle_field: how_many_hackathons
+ - name: how_many_hackathons
+   label: "About how many hackathons have you attended?"
+   type: select
+   options:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5 or more
    hidden: True
  - name: been_to_hackumass
    label: 'Have you previously attended HackUMass?'
@@ -34,11 +39,11 @@ custom_fields:
    max_chars: 500
    hidden: True
  - name: programming_skills
-   label: 'Programming Skills (select all that apply)'
+   label: "Programming Skills (select all that apply, and if you don't know many that's okay!)"
    type: multiselect
    options:
     - HTML/CSS
-    - Javascript/NodeJS
+    - Javascript/Node
     - PHP
     - SQL
     - Ruby
@@ -61,9 +66,25 @@ custom_fields:
    label: 'If there are any other tech-related skills not listed above that you would like to share, list them below'
    type: textarea
    max_chars: 500
+ - name: get_out_of_hum
+   label: 'What would you like to get out of HackUMass? (select all that apply)'
+   type: multiselect
+   options:
+    - Learn more about hardware and hardware hacking
+    - Learn more about web programming
+    - Learn more about AI and machine learning
+    - Learn more about iOS/Android app development
+    - Hack with people you know
+    - Hack with people you don't know
+    - Receive swag items from sponsors
+    - Network with sponsors
+ - name: interested_in_beginner
+   label: "Would you be interested in a 'beginner track' with specialized workshops to help you learn more about hardware and software hacking?"
+   type: boolean
+   required: True
  - name: how_did_you_hear
    label: 'How did you hear about HackUMass?'
-   type: select
+   type: multiselect
    required: True
    options:
     - I previously attended HackUMass
@@ -74,6 +95,7 @@ custom_fields:
     - From a teacher
     - From a friend
     - Social media
+    - HackUMass t-shirt guerilla marketing
     - I go to UMass
     - Other
  - name: what_hardware
@@ -81,5 +103,5 @@ custom_fields:
    type: 'textarea'
    max_chars: 500
  - name: fun_question
-   label: "Phew! That application was a bit long, but you're almost done! Just for fun... what's your spirit animal? :) Creativity counts"
+   label: "Phew! That application was a bit long, but you're almost done! :D Just for fun... what's your spirit animal?"
 
