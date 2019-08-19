@@ -1,28 +1,41 @@
+options:
+  hide_event_toc: False
+  hide_mlh_toc: False
+  min_resume_age: 17
 custom_fields:
  - name: linkedin_url
-   text: 'LinkedIn URL:'
+   label: 'LinkedIn URL'
+   validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
+   validate_error: 'Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile'
  - name: github_url
-   text: 'GitHub URL:'
+   label: 'GitHub URL'
+   validate_regex: '\A(https:\/\/)?(www.)?github.com\/\S+\z'
+   validate_error: 'Your Github URL is invalid. Example format: https://github.com/yourprofile'
+ - name: other_url
+   label: 'Other website URL'
  - name: been_to_hackathon
-   text: 'Have you been to a hackathon before?'
+   label: 'Have you been to a hackathon before?'
    type: boolean
    required: True
    toggle_field: been_to_hackathon_name
  - name: been_to_hackathon_name
-   text: 'What other hackathons have you attended? Give a short list:'
+   label: "What other hackathons have you attended? Give a short list"
    type: textarea
-   max_chars: 150
+   max_chars: 500
    hidden: True
  - name: been_to_hackumass
-   text: 'Have you previously attended HackUMass?'
+   label: 'Have you previously attended HackUMass?'
    type: boolean
    required: True
    toggle_field: previous_hackumass_comments
  - name: previous_hackumass_comments
-   text: "Since you've attended HackUMass before, is there anything new or different you'd like to see at HackUMass VII?"
+   label: "Since you've attended HackUMass before, is there anything new or different you'd like to see at HackUMass VII?"
+   type: textarea
+   max_chars: 500
    hidden: True
  - name: programming_skills
-   text: 'Programming Skills (select all that apply):'
+   label: 'Programming Skills (select all that apply)'
+   type: multiselect
    options:
     - HTML/CSS
     - Javascript/NodeJS
@@ -36,7 +49,8 @@ custom_fields:
     - C/C++/C#
     - Python
  - name: hardware_skills
-   text: 'Hardware Skills (select all that apply):'
+   label: 'Hardware Skills (select all that apply)'
+   type: multiselect
    options:
     - Embedded Systems
     - Robotics
@@ -44,15 +58,28 @@ custom_fields:
     - Circuits
     - 3D Printing
  - name: other_skills
-   title: 'If there are any other tech-related skills not listed above that you would like to share, list them below:'
+   label: 'If there are any other tech-related skills not listed above that you would like to share, list them below'
    type: textarea
-   max_chars: 150
+   max_chars: 500
  - name: how_did_you_hear
-   title: 'How did you hear about HackUMass?'
-   type: textarea
+   label: 'How did you hear about HackUMass?'
+   type: select
+   required: True
+   options:
+    - I previously attended HackUMass
+    - From the MLH website
+    - From HackHer413
+    - From another MLH event
+    - Word of mouth
+    - From a teacher
+    - From a friend
+    - Social media
+    - I go to UMass
+    - Other
  - name: what_hardware
-   title: 'What hardware do you want to see at HackUMass?'
+   label: 'What hardware do you want to see at HackUMass?'
    type: 'textarea'
+   max_chars: 500
  - name: fun_question
-   title: "Phew! That application was a bit long, but you're almost done! Just for fun... what's your spirit animal? Creativity counts! :)"
+   label: "Phew! That application was a bit long, but you're almost done! Just for fun... what's your spirit animal? :) Creativity counts"
 
