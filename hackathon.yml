@@ -10,3 +10,6 @@ emails:
   contact: team@hackumass.com
 slack:
   subdomain: hackumass-vii
+applications:
+  mode: 'open'
+  # options: open, waitlist, or closed. defaults to closed
