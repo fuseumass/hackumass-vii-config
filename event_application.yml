@@ -100,8 +100,12 @@ custom_fields:
     - Other
  - name: what_hardware
    label: 'What hardware do you want to see at HackUMass?'
-   type: 'textarea'
+   type: textarea
    max_chars: 500
+ - name: sleeping_accommodations
+   label: 'Would you want sleeping accommodations if you were able to come to the event?'
+   type: boolean
+   required: True
  - name: fun_question
    label: "Phew! That application was a bit long, but you're almost done! :D Just for fun... what's your spirit animal?"
 
