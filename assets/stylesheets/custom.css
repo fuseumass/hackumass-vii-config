@@ -10,3 +10,13 @@ img.header-brand-img {
     margin-right: .5rem;
     width: auto;
 }
+
+.env-banner {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    border: 2px solid red;
+    padding: 4px;
+    color: red;
+}
