@@ -15,8 +15,9 @@ var addBanner = function() {
 var init = function() {
     addBanner();
 
-    if (location.pathname == '/login') {
+    if (location.pathname == '/login' && document.getElementById('apps-open') == null) {
         var c = document.createElement('div');
+        c.setAttribute('id', 'apps-open');
         c.classList.add('alert');
         c.classList.add('alert-info');
         c.setAttribute('style', 'margin-top: 20px');
