@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+var addBanner = function() {
     if (location.hostname.indexOf('staging') != -1) {
         var e = document.createElement('div');
         e.classList.add('env-banner');
@@ -10,4 +10,20 @@ window.addEventListener('load', function() {
         e.innerHTML = 'NON-PROD';
         document.body.appendChild(e);
     }
-});
+};
+
+var init = function() {
+    addBanner();
+
+    if (location.pathname == '/login') {
+        var c = document.createElement('div');
+        c.classList.add('alert');
+        c.classList.add('alert-info');
+        c.setAttribute('style', 'margin-top: 20px');
+        c.innerHTML = "<b>Applications are now open for HackUMass VII!</b><br />If you have previously created a Dashboard account then you'll need to register again. We can't wait for you to apply!";
+        document.querySelector('.container').prepend(c);
+    }
+}
+
+window.addEventListener('load', init);
+$(document).on('turbolinks:load', init);
