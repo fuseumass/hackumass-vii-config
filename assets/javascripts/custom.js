@@ -21,7 +21,7 @@ var init = function() {
         c.classList.add('alert');
         c.classList.add('alert-info');
         c.setAttribute('style', 'margin-top: 20px');
-        c.innerHTML = "<b>Applications are now open for HackUMass VII and will close on September 27<sup>th</sup>, 2019!</b><br />If you have previously created a Dashboard account then you'll need to register again. We can't wait for you to apply!";
+        c.innerHTML = "Primary-round applications for HackUMass VII have closed -- waitlist applications are still open!";
         document.querySelector('.container').prepend(c);
     } else if (location.pathname == '/users/password/new' && document.getElementById('apps-open') == null) {
         var c = document.createElement('div');
@@ -29,7 +29,7 @@ var init = function() {
         c.classList.add('alert');
         c.classList.add('alert-info');
         c.setAttribute('style', 'margin-top: 20px');
-        c.innerHTML = "<b>If you have previously created a Dashboard account then you'll need to register again instead of resetting your old password. Thanks!</b>";
+        c.innerHTML = "<b>If you created a Dashboard account last year, then you'll need to register again instead of resetting your old password. Thanks!</b>";
         document.querySelector('.container').prepend(c);
     }
 }
