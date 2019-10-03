@@ -1,0 +1,72 @@
+custom_questions:
+ - name: workshops
+   label: 'Which of these workshops or other events would you most like to see at HackUMass?'
+   type: multiselect
+   required: True
+   options:
+    - Intro to Raspberry Pi
+    - Intro to Python and Python Web Frameworks
+    - Intro to Cloud Computing/AWS
+    - Intro to React/React Native
+    - Intro to UI/UX Design
+    - Technical Interview Prep
+    - Using the Linux terminal
+    - Intro to JavaScript
+    - Intro to Android development
+    - Building and Updating Resumes
+    - Intro to HTML/CSS
+    - Intro to Arduino
+    - Intro to Soldering
+    - Graduate School Panel
+    - Intro to iOS Development
+    - Intro to Rust
+    - Intro to Fabrication
+    - Intro to Java and Java Web Frameworks
+    - Intro to Physical Security
+    - Intro to Haskell/Functional Programming
+    - Intro to Cybersecurity
+    - Using Git and Github
+    - Antenna Building
+    - Intro to Machine Learning
+    - Using Deep Learning and Machine Vision
+    - Using TensorFlow
+    - Intro to Cryptography
+    - Intro to C++
+    - The Art of Programming in Java
+ - name: any_other_workshops
+   label: 'Are there any other workshops not in this list that you would like to see?'
+ - name: beginner_track
+   label: 'Do you want to be a part of our beginner track of curated workshops? If so, we will send you more information closer to the event.'
+   type: boolean
+   required: True
+ - name: driving
+   label: "Are you driving to the event and need to park?"
+   type: boolean
+   required: True
+   toggle_field: parking_pass
+ - name: parking_pass
+   label: "Do you have a UMass parking pass?"
+   type: boolean
+   hidden: True
+ - name: buses_boston
+   label: "Are you interested in reserving a seat on the Boston bus? If so, we will send you more information via email."
+   type: boolean
+   required: True
+   toggle_field: buses_boston_understand
+ - name: buses_boston_understand
+   label: "Bus availability is on a first-come, first-served basis. In order to reserve a seat, you MUST apply for a seat via a link which will be sent to you via email. To acknowledge, select yes."
+   type: boolean
+   only_yes: True
+ - name: buses_nyc
+   label: "Are you interested in reserving a seat on the New York City bus? If so, we will send you more information via email."
+   type: boolean
+   required: True
+   toggle_field: buses_nyc_understand
+ - name: buses_nyc_understand
+   label: "Bus availability is on a first-come, first-served basis. In order to reserve a seat, you MUST apply for a seat via a link which will be sent to you via email. To acknowledge, select yes."
+   type: boolean
+   only_yes: True
+ - name: sleeping_bag
+   label: "Are you planning to bring a sleeping bag and will want a place to sleep in the venue during the night?"
+   type: boolean
+   required: True
