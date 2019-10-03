@@ -56,6 +56,7 @@ custom_questions:
  - name: buses_boston_understand
    label: "Bus availability is on a first-come, first-served basis. In order to reserve a seat, you MUST apply for a seat via a link which will be sent to you via email. To acknowledge, select yes"
    type: boolean
+   hidden: True
    only_yes: True
  - name: buses_nyc
    label: "Are you interested in reserving a seat on the New York City bus? If so, we will send you more information via email"
@@ -65,6 +66,7 @@ custom_questions:
  - name: buses_nyc_understand
    label: "Bus availability is on a first-come, first-served basis. In order to reserve a seat, you MUST apply for a seat via a link which will be sent to you via email. To acknowledge, select yes"
    type: boolean
+   hidden: True
    only_yes: True
  - name: sleeping_bag
    label: "Are you planning to bring a sleeping bag and will want a place to sleep in the venue during the night?"
