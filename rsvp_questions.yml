@@ -36,7 +36,7 @@ custom_questions:
  - name: any_other_workshops
    label: 'Are there any other workshops not in this list that you would like to see?'
  - name: beginner_track
-   label: 'Do you want to be a part of our beginner track of curated workshops? If so, we will send you more information closer to the event.'
+   label: 'Do you want to be a part of our beginner track of curated workshops? If so, we will send you more information closer to the event'
    type: boolean
    required: True
  - name: driving
@@ -49,21 +49,21 @@ custom_questions:
    type: boolean
    hidden: True
  - name: buses_boston
-   label: "Are you interested in reserving a seat on the Boston bus? If so, we will send you more information via email."
+   label: "Are you interested in reserving a seat on the Boston bus? If so, we will send you more information via email"
    type: boolean
    required: True
    toggle_field: buses_boston_understand
  - name: buses_boston_understand
-   label: "Bus availability is on a first-come, first-served basis. In order to reserve a seat, you MUST apply for a seat via a link which will be sent to you via email. To acknowledge, select yes."
+   label: "Bus availability is on a first-come, first-served basis. In order to reserve a seat, you MUST apply for a seat via a link which will be sent to you via email. To acknowledge, select yes"
    type: boolean
    only_yes: True
  - name: buses_nyc
-   label: "Are you interested in reserving a seat on the New York City bus? If so, we will send you more information via email."
+   label: "Are you interested in reserving a seat on the New York City bus? If so, we will send you more information via email"
    type: boolean
    required: True
    toggle_field: buses_nyc_understand
  - name: buses_nyc_understand
-   label: "Bus availability is on a first-come, first-served basis. In order to reserve a seat, you MUST apply for a seat via a link which will be sent to you via email. To acknowledge, select yes."
+   label: "Bus availability is on a first-come, first-served basis. In order to reserve a seat, you MUST apply for a seat via a link which will be sent to you via email. To acknowledge, select yes"
    type: boolean
    only_yes: True
  - name: sleeping_bag
