@@ -68,7 +68,7 @@ custom_questions:
    type: boolean
    hidden: True
    only_yes: True
- - name: sleeping_bag
-   label: "Are you planning to bring a sleeping bag and will want a place to sleep in the venue during the night?"
+ - name: sleeping 
+   label: "Are you planning on sleeping at the venue? If so, we recommend that you bring a sleeping bag. We will have some sleeping areas available."
    type: boolean
    required: True
