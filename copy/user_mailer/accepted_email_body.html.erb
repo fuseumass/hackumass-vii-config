@@ -1,6 +1,9 @@
 <p style="font-family:sans-serif;font-size:14px;font-weight:normal;margin:0;Margin-bottom:15px;">Hi <%= @user.first_name %>,</p>
 <p style="font-family:sans-serif;font-size:14px;font-weight:normal;margin:0;Margin-bottom:15px;">Congratulations! You submitted an application to attend <%= HackumassWeb::Application::HACKATHON_NAME %> <%= HackumassWeb::Application::HACKATHON_VERSION %>, and you have been accepted!</p>
 <p style="font-family:sans-serif;font-size:14px;font-weight:normal;margin:0;Margin-bottom:15px;">The event starts in the <b>evening of Friday, October 18th</b> and ends in the <b>late afternoon of Sunday, October 20th</b> at the <b>University of Massachusetts Amherst</b> in Amherst, MA. In order to participate, make sure you go to our website and <b>RSVP</b>! There, you will find more information about traveling, and how to get to the event. <b>Your spot is not reserved until you RSVP, so please do so as soon as you know whether or not you will be able to attend!</b></p>
+
+<p style="font-family:sans-serif;font-size:14px;font-weight:normal;margin:0;Margin-bottom:15px;"><b>In order to confirm your spot, please RSVP before <u>Friday, October 11th</u>.</b></p>
+
 <p style="font-family:sans-serif;font-size:14px;font-weight:normal;margin:0;Margin-bottom:15px;">If you have any questions, please visit our website at <a href="<%= HackumassWeb::Application::MAIN_WEBSITE %>" target='_blank'><%= HackumassWeb::Application::MAIN_WEBSITE %></a>. If you can’t find your answer on our website, then please feel free to shoot us an email at <a href="mailto:<%= HackumassWeb::Application::CONTACT_EMAIL %>"> <%= HackumassWeb::Application::CONTACT_EMAIL %> </a></p>
 <p style="font-family:sans-serif;font-size:14px;font-weight:normal;margin:0;Margin-bottom:15px;">You should also definitely check out the <%= HackumassWeb::Application::HACKATHON_NAME %> <%= HackumassWeb::Application::HACKATHON_VERSION %> Slack, because it's likely that your questions have already been asked! <a href="https://<%= HackumassWeb::Application::DASHBOARD_URL %>">Log in to your account at <%= HackumassWeb::Application::DASHBOARD_URL %></a> to join.</p>
 <% if @user.event_application.age.to_i < 18 %>
@@ -23,5 +26,8 @@
 </tr>
 </tbody>
 </table>
+
+<p style="font-family:sans-serif;font-size:14px;font-weight:normal;margin:0;Margin-bottom:15px;"><b>For UMass students:</b> Interested in acting on your entrepeneurial spirit and can't wait until HackUMass? <b>Check out ULaunch this weekend</b> (October 5th-6th) run by the Berthiaume Center for Entrepeneurship. You can join aspiring entrepreneurs, engineers, coders and graphic designers all with the goal of creating a team and launching your own startup right here at UMass. If you think up your startup idea this weekend, then you can start building it in two weeks at HackUMass! <a href="https://www.eventbrite.com/e/ulaunch-umass-tickets-73303373363">Learn more or sign up here!</a></p>
+
 <p style="font-family:sans-serif;font-size:14px;font-weight:normal;margin:0;Margin-bottom:15px;">Thanks again for registering for our event, and we look forward to seeing you there!
 <br>- The <%= HackumassWeb::Application::HACKATHON_NAME %> Team</p>
