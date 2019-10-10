@@ -15,3 +15,13 @@ applications:
   # options: open, waitlist, or closed. defaults to closed.
   # The applications are still not opened unless the applications feature
   # flag is enabled.
+checkin:
+  university_email_suffix: umass.edu
+  university_name: UMass
+  university_name_checks:
+    - University of Massachusetts Amherst
+    - UMass Amherst
+    - Mass Amherst
+    - Mass-Amherst
+    - Mass at Amherst
+    - Mass, Amherst
