@@ -25,3 +25,5 @@ checkin:
     - Mass-Amherst
     - Mass at Amherst
     - Mass, Amherst
+projects:
+  public: true
