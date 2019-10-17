@@ -21,7 +21,7 @@ var init = function() {
         c.classList.add('alert');
         c.classList.add('alert-info');
         c.setAttribute('style', 'margin-top: 20px');
-        c.innerHTML = "Primary-round applications for HackUMass VII have closed -- waitlist applications are still open!";
+        c.innerHTML = 'Its time for HackUMass! You can find the schedule of events <a href="https:\/\/dashboard.hackumass.com\/events">[Here]</a>';
         document.querySelector('.container').prepend(c);
     } else if (location.pathname == '/users/password/new' && document.getElementById('apps-open') == null) {
         var c = document.createElement('div');
