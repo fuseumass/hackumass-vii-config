@@ -21,7 +21,7 @@ var init = function() {
         c.classList.add('alert');
         c.classList.add('alert-info');
         c.setAttribute('style', 'margin-top: 20px');
-        c.innerHTML = 'Its time for HackUMass! You can find the schedule of events <a href="https:\/\/dashboard.hackumass.com\/events">[Here]</a>';
+        c.innerHTML = 'Its time for HackUMass! You can find the schedule of events by logging in or at <a href="https:\/\/hackumass.com\/schedule">hackumass.com/schedule</a>';
         document.querySelector('.container').prepend(c);
     } else if (location.pathname == '/users/password/new' && document.getElementById('apps-open') == null) {
         var c = document.createElement('div');
