@@ -10,6 +10,7 @@ emails:
   contact: team@hackumass.com
 slack:
   subdomain: hackumass-vii
+  message_url_prefix: https://app.slack.com/client/TM95PJHB7/CP1HFSYF2/user_profile/
 applications:
   mode: 'waitlist'
   # options: open, waitlist, or closed. defaults to closed.
